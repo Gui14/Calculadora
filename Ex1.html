@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div_principal">
+        <header>
+            <h1>Calculadora</h1>
+        </header>
+        <div>
+            <table id="tabela">
+                <tr>
+                    <td id="resultado" colspan="4">
+                        <p id="tela"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="apagar" class="tds">
+                        <button class="buttons" onclick="apagar_ultimo()">CE</button>
+                    </td>
+                    <td id="excluir" class="tds">
+                        <button class="buttons" onclick="apagar_tudo()">C</button>
+                    </td>
+                    <td>
+                        <button class="buttons" onclick="adicionar_parentesis()">( )</button>
+                    </td>
+                    <td id="divisao" class="tds">
+                        <button class="operacao" onclick="operacao_divisao()">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num_sete" class="tds">
+                        <button class="buttons" onclick="adicionar_num_7()">7</button>
+                    </td>
+                    <td id="num_oito" class="tds">
+                        <button class="buttons" onclick="adicionar_num_8()">8</button>
+                    </td>
+                    <td id="num_nove" class="tds">
+                        <button class="buttons" onclick="adicionar_num_9()">9</button>
+                    </td>
+                    <td id="plus" class="tds">
+                        <button class="operacao" onclick="operacao_mais()">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num_quatro" class="tds">
+                        <button class="buttons" onclick="adicionar_num_4()">4</button>
+                    </td>
+                    <td id="num_cinco" class="tds">
+                        <button class="buttons" onclick="adicionar_num_5()">5</button>
+                    </td>
+                    <td id="num_seis" class="tds">
+                        <button class="buttons" onclick="adicionar_num_6()">6</button>
+                    </td>
+                    <td id="mines" class="tds">
+                        <button class="operacao" onclick="operacao_menos()">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="num_um" class="tds">
+                        <button class="buttons" onclick="adicionar_num_1()">1</button>
+                    </td>
+                    <td id="num_dois" class="tds">
+                        <button class="buttons" onclick="adicionar_num_2()">2</button>
+                    </td>
+                    <td id="num_tres" class="tds">
+                        <button class="buttons" onclick="adicionar_num_3()">3</button>
+                    </td>
+                    <td id="multiplicacao" class="tds">
+                        <button class="operacao" onclick="operacao_multiplicacao()">x</button>
+                    </td>
+                </tr>
+                <tr>
+                   
+                    <td id="num_zero" class="tds" colspan="2">
+                        <button class="buttons" onclick="adicionar_num_0()">0</button>
+                    </td>
+                    <td id="ponto" class="tds">
+                        <button class="buttons" onclick="adicionar_ponto()">.</button>
+                    </td>
+                    <td id="igual" class="tds">
+                        <button class="operacao" onclick="realizar_operacao()">=</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="Ex1.js"></script>
+</body>
+</html>
